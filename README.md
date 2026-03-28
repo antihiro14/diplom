@@ -57,6 +57,13 @@
 - deployment.md — запуск
 - update.md — оновлення
 - backup.md — резервне копіювання
+
+## Documentation Languages
+
+Documentation is available in two languages:
+
+- Ukrainian — main documentation (`docs/`)
+- English — additional documentation (`docs/en/`)
 ### Генерація документації
 
 Для автоматичної генерації документації використовується `pdoc`.
