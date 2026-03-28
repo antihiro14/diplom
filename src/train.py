@@ -4,8 +4,27 @@ import torchvision.transforms as transforms
 
 from src.dataset import UECFoodDataset
 from models.classifier import get_model
+"""
+Модуль навчання моделі.
 
+Містить логіку тренування нейронної мережі для класифікації
+зображень страв.
+"""
 def train():
+    """
+       Виконує навчання моделі.
+
+       Args:
+           model: Модель класифікації.
+           dataloader: Завантажувач даних.
+           criterion: Функція втрат.
+           optimizer: Оптимізатор.
+           device: Пристрій (CPU або GPU).
+           epochs: Кількість епох.
+
+       Returns:
+           Навчену модель.
+       """
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     transform = transforms.Compose([

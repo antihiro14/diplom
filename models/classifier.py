@@ -1,6 +1,10 @@
 import torch.nn as nn
 from torchvision import models
+"""
+Модуль класифікатора.
 
+Містить реалізацію моделі для розпізнавання страв за зображенням.
+"""
 def get_model(num_classes):
     model = models.resnet18(pretrained=True)
 

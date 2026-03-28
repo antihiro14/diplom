@@ -1,6 +1,12 @@
 import torchvision.transforms as transforms
 from src.dataset import UECFoodDataset
+"""
+Головний модуль запуску проєкту.
 
+Цей файл є точкою входу в систему аналізу їжі за фотографією.
+На поточному етапі використовується для запуску навчання моделі
+та координації основних процесів.
+"""
 dataset = UECFoodDataset(
     root_dir="data/UECFOOD256",
     transform=transforms.Compose([
