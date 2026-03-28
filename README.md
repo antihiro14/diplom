@@ -50,6 +50,13 @@
 - `generate_docs.md` — інструкція з генерації документації;
 - `generated/` — згенерована HTML-документація.
 
+## DevOps документація
+
+У папці docs знаходяться інструкції:
+
+- deployment.md — запуск
+- update.md — оновлення
+- backup.md — резервне копіювання
 ### Генерація документації
 
 Для автоматичної генерації документації використовується `pdoc`.
@@ -57,4 +64,4 @@
 Приклад команди:
 
 ```bash
-pdoc main.py src models -o docs/generated
+pdoc main.py src models -o docs/generated 
